@@ -106,6 +106,10 @@ header {
     text-align: center;
 }
 
+.motho-story a {
+    color: greenyellow;
+}
+
 .primary-btn {
     background: #004080;
     color: #fff;
