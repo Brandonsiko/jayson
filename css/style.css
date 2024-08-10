@@ -1,110 +1,126 @@
-/* General Styles */
+/* General styles */
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f7fa;
     color: #333;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-header, footer {
-    background-color: #004080;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+a {
+    color: #004080;
+    text-decoration: none;
 }
 
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
+a:hover {
+    text-decoration: underline;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+/* Navigation */
+nav {
+    background: #004080;
+    padding: 1rem;
 }
 
-.center-items {
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+    background: #f4f4f4;
 }
 
 .circle-image img {
+    border-radius: 50%;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    border: 5px solid #004080;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-text {
+    margin-top: 1rem;
 }
 
 .main-text {
-    text-align: center;
-    margin-top: 20px;
+    color: #004080;
+    font-size: 2rem;
 }
 
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* About section */
 .about-block {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
 }
 
 .quote {
     font-size: 1.5rem;
-    color: #004080;
-    display: inline-block;
-    margin-right: 5px;
 }
 
-.portfolio {
+
+
+/* Projects section */
+.container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 20px;
+    gap: 1rem;
+    padding: 2rem;
+    justify-content: center;
 }
 
-.portfolio-item {
-    background-color: #ffffff;
-    width: 30%;
-    padding: 10px;
-    margin: 10px 0;
+.container-child {
+    background: #f4f4f4;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 300px;
 }
 
-.portfolio-item:hover {
-    transform: translateY(-5px);
-}
-
-.portfolio img {
+.container-child img {
     width: 100%;
-    height: auto;
     border-radius: 8px;
 }
 
-.primary-btn a {
-    display: inline-block;
-    margin: 10px 5px 0 0;
-    padding: 8px 16px;
-    background-color: #004080;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+.motho-story {
+    text-align: center;
 }
 
-.primary-btn a:hover {
-    background-color: #002f5f;
+.primary-btn {
+    background: #004080;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
 }
 
+.primary-btn:hover {
+    background: #003366;
+}
+
+/* Skills section */
 .skills {
     display: flex;
     justify-content: space-between;
@@ -113,46 +129,41 @@ footer {
 }
 
 .skills div {
-    width: 22%;
+    width: 42vh;
     background-color: #ffffff;
-    padding: 15px;
+    padding: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.skills label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-    color: #004080;
-}
-
-.contact {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
+/* Contact section */
 .contact-block {
+    padding: 2rem;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
-.contact-block div {
-    margin-bottom: 10px;
-}
-
-.contact-block label {
+.contact-item {
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 300px;
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
-.contact-block label img {
-    width: 20px;
-    vertical-align: middle;
-    margin-right: 8px;
+.contact-item img {
+    width: 30px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #004080;
+    color: #fff;
 }
